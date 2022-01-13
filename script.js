@@ -31,10 +31,8 @@ const render = () => {
 }
 
 const handleClickAdd = () => {
-    let inputValue = input.value.trim();
-
-    if (inputValue) {
-        tasks.push(inputValue);
+    if (input.value.trim()) {
+        tasks.push(input.value);
     } else {
         alert('Введите данные!')
     }
